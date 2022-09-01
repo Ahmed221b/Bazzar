@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login.CSS">
+    </head>
+
+    <body>
+        <form  name="inputForm" action="#">
+
+           <input type="email" placeholder="E_mail"  id="email"> <br>
+
+           <input type="password" placeholder="password"  id="password" > <br>
+
+           <button  onclick="return check(email,password)">Login</button>
+
+           <p class="message">Not Registed? <a class="registerLink" href="Register.html"> Register</a></p>
+
+        </form>
+    </body>
+
+
+    <!--js code below-->
+   <script>
+function check(email,password)
+{  
+var email = document.getElementById("email").value;
+
+var password=document.getElementById("password").value;
+
+var admin_mail="admin@gmail.com";
+
+var admin_pass="Abc_123";  
+if(document.inputForm.email.value==="")
+{
+    alert("email is empty");
+}
+else if(password==="")
+{
+    alert("password is empty");
+}
+else if(email===""&&password==="")
+{
+    alert("email and password are empty");
+}
+else if(admin_mail===email && admin_pass===password)
+{
+    
+   window.location.href="admin.html";
+}
+else if(email==="user@gmail.com"&& password==="Abc_321")
+{
+    window.location.href= "Home.html";  
+}
+else
+{
+    alert("wrong email or password!");
+}
+}
+   </script>
+</html>

@@ -1,0 +1,56 @@
+*
+{
+  margin: 0%;
+  padding: 0%;
+}
+body
+{
+    background-image: url(Images/Login.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-top: 250px;
+}
+.register-form
+{
+    width: 350px;
+    margin: auto;
+    border: black solid 1px;
+    background-color: rgba(12, 12, 12, 0.5);
+    padding: 10px 0px;
+    border-radius: 8px;
+}
+.register-form input
+{
+    width: 90%;
+    font-family: "Roboto",sans-serif;
+    padding: 10px ;
+    margin: 5px 15px;
+    border: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.register-form button
+{
+    background-color: orange;
+    width: 90%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    border: 0px;
+    margin: 5px 0px 8px 0px;
+}
+.register-form a
+{
+    text-decoration: none;
+    color: orange;
+}
+.register-form a:hover
+{
+    color: yellowgreen;
+}
+.message
+{
+    color: whitesmoke;
+    font-weight: bold;
+}
